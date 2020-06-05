@@ -6,5 +6,33 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  
+  nombre     :string   = "Monkey D' Luffy";
+  personajes :string[] = ["Luffy","Zoro","Sanji","Nami"];
+  arreglo    :number[] = [1,2,3,4,5,6,7,8,9,10];
+  PI         : number  = Math.PI;
+  porcentaje :number   = 0.234;
+  salario    :number   = 1234.5;
+  fecha      :Date     =new Date();
+  idioma     :string   ='es';
+  valorPromesa= new Promise<string>( (resolve, reject)=>{
+  
+      setTimeout(() => {
+        resolve('llego la data')
+      }, 5000);
+
+  })
+
+
+  pirata={
+    nombre:'Sanji',
+    clave:'Piernas Negras',
+    edad:20,
+    direccion:{
+      barco:'Going Merry',
+      ubicacionActual:'New World'
+    }
+  }
+
+
 }
