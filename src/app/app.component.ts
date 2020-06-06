@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   nombre     :string   = "Monkey D' Luffy";
+  nombre2: string ="vINsmOkE sAnjI kUROaShi"
   personajes :string[] = ["Luffy","Zoro","Sanji","Nami"];
   arreglo    :number[] = [1,2,3,4,5,6,7,8,9,10];
   PI         : number  = Math.PI;
@@ -15,6 +16,9 @@ export class AppComponent {
   salario    :number   = 1234.5;
   fecha      :Date     =new Date();
   idioma     :string   ='es';
+  capital    :boolean  =true;
+  activar    :boolean  =true;
+  videoUrl   : string  ="https://www.youtube.com/embed/SWZ_4YBFBhs"
   valorPromesa= new Promise<string>( (resolve, reject)=>{
   
       setTimeout(() => {
